@@ -1,0 +1,159 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Shamela",
+  "projectDescription": "TypeScript library for accessing and downloading Maktabah al-Shamela v4 APIs and processing Arabic Islamic texts",
+  "theme": "palm",
+  "primaryColor": "#2E7D32",
+  "lightColor": "#66BB6A",
+  "darkColor": "#1B5E20",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/configuration",
+              "concepts/environments",
+              "concepts/data-structures"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/downloading-books",
+              "guides/downloading-master",
+              "guides/retrieving-data",
+              "guides/content-processing",
+              "guides/nextjs-integration"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/basic-usage",
+              "examples/browser-usage",
+              "examples/content-utilities"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Configuration",
+            "pages": [
+              "api/configuration/configure",
+              "api/configuration/reset-config",
+              "api/configuration/get-config",
+              "api/configuration/get-config-value",
+              "api/configuration/require-config-value"
+            ]
+          },
+          {
+            "group": "Metadata & Downloads",
+            "pages": [
+              "api/metadata/get-master-metadata",
+              "api/metadata/download-master-database",
+              "api/metadata/get-book-metadata",
+              "api/metadata/download-book",
+              "api/metadata/get-cover-url"
+            ]
+          },
+          {
+            "group": "Data Access",
+            "pages": [
+              "api/data/get-book",
+              "api/data/get-master",
+              "api/data/denormalize-books"
+            ]
+          },
+          {
+            "group": "Content Utilities",
+            "pages": [
+              "api/content/parse-content-robust",
+              "api/content/map-page-character-content",
+              "api/content/split-page-body-from-footer",
+              "api/content/remove-arabic-numeric-page-markers",
+              "api/content/remove-tags-except-span",
+              "api/content/normalize-line-endings",
+              "api/content/strip-html-tags",
+              "api/content/html-to-markdown",
+              "api/content/normalize-html",
+              "api/content/normalize-title-spans",
+              "api/content/move-content-after-line-break-into-span",
+              "api/content/convert-content-to-markdown"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "api/utilities/build-url",
+              "api/utilities/https-get"
+            ]
+          },
+          {
+            "group": "Types",
+            "pages": [
+              "api/types/book-data",
+              "api/types/master-data",
+              "api/types/page",
+              "api/types/title",
+              "api/types/author",
+              "api/types/book",
+              "api/types/category",
+              "api/types/configuration-types",
+              "api/types/options-types"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Full data lifecycle - fetch metadata, download databases, and query in-memory",
+    "Runtime configuration for API credentials and WASM paths",
+    "Content processing tools for Arabic text sanitization and formatting",
+    "Environment-aware SQL.js WASM bundle selection",
+    "Comprehensive TypeScript types and extensive test coverage"
+  ],
+  "publicApiSurface": [
+    "configure",
+    "resetConfig",
+    "getConfig",
+    "getConfigValue",
+    "requireConfigValue",
+    "getMasterMetadata",
+    "downloadMasterDatabase",
+    "getBookMetadata",
+    "downloadBook",
+    "getCoverUrl",
+    "getBook",
+    "getMaster",
+    "denormalizeBooks",
+    "parseContentRobust",
+    "mapPageCharacterContent",
+    "splitPageBodyFromFooter",
+    "removeArabicNumericPageMarkers",
+    "removeTagsExceptSpan",
+    "normalizeLineEndings",
+    "stripHtmlTags",
+    "htmlToMarkdown",
+    "normalizeHtml",
+    "normalizeTitleSpans",
+    "moveContentAfterLineBreakIntoSpan",
+    "convertContentToMarkdown",
+    "buildUrl",
+    "httpsGet"
+  ]
+}
